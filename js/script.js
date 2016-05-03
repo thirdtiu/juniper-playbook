@@ -78,7 +78,7 @@
 
 	Book.prototype._layout = function() {
 		if( Modernizr.csstransforms3d ) {
-			this.book.innerHTML = '<div class="cover"><a href="###"><img src="img/necessity/page-corner.png" id="page-corner" /></a><div class="front"></div><div class="inner inner-left"></div></div><div class="inner inner-right"></div>';
+			this.book.innerHTML = '<div class="cover"><a href="###"><img src="img/necessity/page-corner.png" id="page-corner" /></a><div class="front"><div class="front-text"><h4>Connect everything. Empower everyone.</h4><img src="./img/juniper-pages/front-bar.png" class="front-bar"/><h1>Juniper</h1><h5>Quarterly E-Newsletter</h5><div class="issue-text"><span class="front-issue">issue 01  |  April 2016</span><div class="issue-description">Bringing you<br> the Biggest news<br> about IT digital<br> advancement.<img src="./img/juniper-pages/front-bar2.png" class="front-bar"/><span class="keeping">Keeping you connected<br> with the Latest happenings<br>in the industry.</span><img src="./img/juniper-pages/front-bar2.png" class="front-bar"/> The importance of<br>a right data center<br>network is to support<br> your business-critical<br> applications.<img src="./img/juniper-pages/front-bar2.png" class="front-bar"/>The next-generation<br>firewall for your<br> virtualized IT Data<br> Centres – For Enterprises<br> and Service Providers<img src="./img/juniper-pages/front-bar2.png" class="front-bar"> </div></div><div class="circle-black"><div class="inside-circle-text">The<br> Digital<br> Evolution<br>is here. </div></div></div> </div><div class="inner inner-left"></div></div><div class="inner inner-right"></div>';
 		}
 	}
 		
@@ -215,7 +215,7 @@
 					self._prevPage();
 				})
 			});
-			$(".bb-nav-next").each(function(){
+			$(".bb-nav-next, .bb-circle-next").each(function(){
 				$(this).on('click touchstart',function(){
 					self._nextPage();
 				})
@@ -655,5 +655,5 @@
 		 	$('#phone-menu').fadeOut(500);
 		 }
 	 });	
-
+	
 })(jQuery);

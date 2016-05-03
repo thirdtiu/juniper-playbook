@@ -16,12 +16,12 @@ body{
 .no-js .book,
 
 .front {
-    background: url(../../img/juniper-pages/cover.png);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.16) 15%, rgba(255, 255, 255, 0.05) 100%), url(../../img/juniper-pages/cover.png), #333;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.16) 15%, rgba(255, 255, 255, 0.1) 100%), url(../../img/juniper-pages/cover.png), #333;
+    background: url(../../img/juniper-pages/cover.png) #18728d;
+    /*background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.16) 15%, rgba(255, 255, 255, 0.05) 100%), url(../../img/juniper-pages/cover.png), #333;
+    background: linear-gradient(to ri*/ght, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.16) 15%, rgba(255, 255, 255, 0.1) 100%), url(../../img/juniper-pages/cover.png), #333;
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-position:top;	
+	background-position:bottom;	
 }
 
 h1.huge-title{

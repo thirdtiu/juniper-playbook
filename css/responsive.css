@@ -257,7 +257,7 @@
 	}
 }
 @media screen and (max-height: 750px){
-	..page-2-style {
+	.page-2-style {
 		width: 100%;
 	}
 	
