@@ -104,13 +104,13 @@
 	.bb-custom-wrapper .bb-bookblock {
 		height:auto;
 		float:none;
-		height: 100vh;
+		min-height:680px;
 		background:#FFF;
 	}
 	.bb-item{
 		position:static;
 		height:auto;
-		/*min-height:680px;*/
+		min-height:680px;
 	}
 	.bb-custom-side::before{
 		content:none;

@@ -2,16 +2,16 @@
     $(function() {
         var jcarousel = $('.page-style-11 .jcarousel');
 
-        jcarousel
-            .on('jcarousel:reload jcarousel:create', function () {
-                var carousel = $(this),
-                    width = carousel.innerWidth();
-                    width = 43;
-                carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-            })
-            .jcarousel({
-                wrap: 'circular'
-            });
+        // jcarousel
+        //     .on('jcarousel:reload jcarousel:create', function () {
+        //         var carousel = $(this),
+        //             width = carousel.innerWidth();
+        //             width = 43;
+        //         carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+        //     })
+        //     .jcarousel({
+        //         wrap: 'circular'
+        //     });
         // $('.page-style-13 .jcarousel, .page-style-14 .jcarousel')
         //     .on('jcarousel:reload jcarousel:create', function () {
         //         var carousel = $(this),
@@ -23,7 +23,7 @@
         //     .jcarousel({
         //         wrap: 'circular'
         //     });
-        $('.page-style-13 .jcarousel, .page-style-14 .jcarousel').jcarousel();
+        $('.jcarousel').jcarousel();
         $('.jcarousel-control-prev')
             .jcarouselControl({
                 target: '-=1'

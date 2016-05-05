@@ -10,191 +10,80 @@ html {
     overflow: hidden;
 }
 @font-face {
-    font-family: 'Arial';
-    src: url('/fonts/ArialMT.eot');
-    src: url('fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
-        url('fonts/ArialMT.woff') format('woff'),
-        url('fonts/ArialMT.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Gramand";
+    src: url('fonts/garamond.ttf') format('truetype'),
+         url('fonts/garamond.woff') format('woff'),
+         url('fonts/garamond.eot') format('embedded-opentype'),
+         url('fonts/garamond.svg') format('svg');
 }
 
 @font-face {
-    font-family: 'HelveticaNeue-Thin';
-    src: url('fonts/HelveticaNeue-Thin.eot');
-    src: url('fonts/HelveticaNeue-Thin.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-Thin.woff') format('woff'),
-        url('fonts/HelveticaNeue-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+    font-family: "ArialMT";
+    src: url('fonts/ArialMT.ttf') format('truetype'),
+         url('fonts/ArialMT.woff') format('woff'),
+         url('fonts/ArialMT.eot') format('embedded-opentype'),
+         url('fonts/ArialMT.svg') format('svg');
 }
 
 @font-face {
-    font-family: 'MyanmarMN-Bold';
-    src: url('fonts/MyanmarMN-Bold.eot');
-    src: url('fonts/MyanmarMN-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MyanmarMN-Bold.woff') format('woff'),
-        url('fonts/MyanmarMN-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: "HelveticaNeue-Light";
+    src: url('fonts/HelveticaNeue-Light.ttf') format('truetype'),
+         url('fonts/HelveticaNeue-Light.woff') format('woff'),
+         url('fonts/HelveticaNeue-Light.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeue-Light.svg') format('svg');
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'HelveticaNeue-Light';
-    src: url('fonts/HelveticaNeue-Light.eot');
-    src: url('fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-Light.woff') format('woff'),
-        url('fonts/HelveticaNeue-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue-Medium';
-    src: url('fonts/HelveticaNeue-Medium.eot');
-    src: url('fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-Medium.woff') format('woff'),
-        url('fonts/HelveticaNeue-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue-UltraLightItalic';
-    src: url('fonts/HelveticaNeue-UltraLightItalic.eot');
-    src: url('fonts/HelveticaNeue-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-UltraLightItalic.woff') format('woff'),
-        url('fonts/HelveticaNeue-UltraLightItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue';
-    src: url('fonts/HelveticaNeue.eot');
-    src: url('fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue.woff') format('woff'),
-        url('fonts/HelveticaNeue.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'HelveticaNeue-Italic';
-    src: url('fonts/HelveticaNeue-Italic.eot');
-    src: url('fonts/HelveticaNeue-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-Italic.woff') format('woff'),
-        url('fonts/HelveticaNeue-Italic.ttf') format('truetype');
+    src: url('fonts/HelveticaNeue-Italic.ttf') format('truetype'),
+         url('fonts/HelveticaNeue-Italic.woff') format('woff'),
+         url('fonts/HelveticaNeue-Italic.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeue-Italic.svg') format('svg');
     font-weight: normal;
     font-style: italic;
 }
-
-@font-face {
-    font-family: 'HelveticaNeue-MediumItalic';
-    src: url('fonts/HelveticaNeue-MediumItalic.eot');
-    src: url('fonts/HelveticaNeue-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-MediumItalic.woff') format('woff'),
-        url('fonts/HelveticaNeue-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue-BoldItalic';
-    src: url('fonts/HelveticaNeue-BoldItalic.eot');
-    src: url('fonts/HelveticaNeue-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-BoldItalic.woff') format('woff'),
-        url('fonts/HelveticaNeue-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue-Bold';
-    src: url('fonts/HelveticaNeue-Bold.eot');
-    src: url('fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-Bold.woff') format('woff'),
-        url('fonts/HelveticaNeue-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue-CondensedBold';
-    src: url('fonts/HelveticaNeue-CondensedBold.eot');
-    src: url('fonts/HelveticaNeue-CondensedBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-CondensedBold.woff') format('woff'),
-        url('fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
 @font-face { 
     font-family: "MalayalamMN"; 
     src: url("fonts/MalayalamMN.woff") format("woff"),
     url("fonts/MalayalamMN.eot") format("embedded-opentype"),
-    url("fonts/MalayalamMNe.svg") format("svg"),
+    url("fonts/MalayalamMN.svg") format("svg"),
     url("fonts/MalayalamMN.ttf") format("truetype");
 }
-
-
 @font-face {
-    font-family: 'MalayalamMN-Bold';
-    src: url('fonts/MalayalamMN-Bold.eot');
-    src: url('fonts/MalayalamMN-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MalayalamMN-Bold.woff') format('woff'),
-        url('fonts/MalayalamMN-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: "MalayalamMN-Bold";
+    src: url("fonts/MalayalamMN-Bold.woff") format("woff"),
+    url("fonts/MalayalamMN-Bold.eot") format("embedded-opentype"),
+    url("fonts/MalayalamMN-Bold.svg") format("svg"),
+    url("fonts/MalayalamMN-Bold.ttf") format("truetype");
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Myanmar MN';
-    src: url('fonts/MyanmarMN.eot');
-    src: url('fonts/MyanmarMN.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MyanmarMN.woff') format('woff'),
-        url('fonts/MyanmarMN.ttf') format('truetype');
+    font-family: "Myanmar MN";
+    src: url("fonts/MyanmarMN.woff") format("woff"),
+    url("fonts/MyanmarMN.eot") format("embedded-opentype"),
+    url("fonts/MyanmarMN.svg") format("svg"),
+    url("fonts/MyanmarMN.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "MinionPro-Regular";
+    src: url("fonts/MinionPro-Regular.woff") format("woff"),
+    url("fonts/MinionPro-Regular.eot") format("embedded-opentype"),
+    url("fonts/MinionPro-Regular.svg") format("svg"),
+    url("fonts/MinionPro-Regular.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'HelveticaNeue-CondensedBlack';
-    src: url('fonts/HelveticaNeue-CondensedBlack.eot');
-    src: url('fonts/HelveticaNeue-CondensedBlack.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-CondensedBlack.woff') format('woff'),
-        url('fonts/HelveticaNeue-CondensedBlack.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue-UltraLight';
-    src: url('fonts/HelveticaNeue-UltraLight.eot');
-    src: url('fonts/HelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-UltraLight.woff') format('woff'),
-        url('fonts/HelveticaNeue-UltraLight.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue-ThinItalic';
-    src: url('fonts/HelveticaNeue-ThinItalic.eot');
-    src: url('fonts/HelveticaNeue-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/HelveticaNeue-ThinItalic.woff') format('woff'),
-        url('fonts/HelveticaNeue-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
 h1, h2, h3, h4 {
     margin: 0;
     font-weight: normal;
 }
 p {
-    font-size: 10px;
-    font-family: 'HelveticaNeue-Light';
+    font-size: 12px;
+    font-family: "HelveticaNeue-Light";
     line-height: 1.5em;
     color: #000;
     margin: 7px 0;
@@ -206,14 +95,14 @@ p {
     padding: 20px;
 }
 .front-text h4 {
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     font-size: 10px;
     text-align: center;
     text-transform: uppercase;
     /*margin: 0;*/
 }
 .front-text h1 {
-    font-family: 'MalayalamMN-Bold';
+    font-family: "MalayalamMN-Bold";
     font-size: 76px;
     text-align: center;
     text-transform: uppercase;
@@ -224,7 +113,7 @@ p {
 }
 .front-text h5 {
     font-size: 7px;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     text-align: right;
     font-style: italic;
     margin: 0;
@@ -241,11 +130,11 @@ p {
     font-size: 7.5px;
     text-transform: uppercase;
     font-style: italic;
-    font-family: 'MyanmarMN';
+    font-family: "MyanmarMN";
     display: block;
 }
 .issue-description {
-    font-family: 'MyanmarMN';
+    font-family: "MalayalamMN";
     display: block;
     font-size: 10px;
     line-height: 13px;
@@ -255,16 +144,16 @@ p {
     margin: 3px 0;
 }
 .issue-description .keeping {
-    font-size: 7px;
-    font-family: 'HelveticaNeue-Italic';
-    line-height: 8px;
+    font-size: 9px;
+    font-family: "HelveticaNeue-Italic";
+    line-height: 10px;
     display: block;
 }
 .book .circle-black {
     width: 77px;
     height: 77px;
-    bottom: 297px;
-    right: 30px;
+    right: 10px;
+    top: 70px;
 }
 .book .circle-black .inside-circle-text {
     font-size: 11.6px;
@@ -288,12 +177,12 @@ p {
 }
 .page-style-2 h3 {
   font-style: italic;
-  font-family: 'MalayalamMN';
+  font-family: "MalayalamMN";
   font-size: 18px;
   line-height: 23px;
 }
 .page-style-2 .two-col h4 {
-    font-family: 'MalayalamMN-Bold';
+    font-family: "MalayalamMN-Bold";
     font-size: 12px;
 }
 .page-style-2, .page-style-2 p {
@@ -307,9 +196,8 @@ p {
   width: 48%;
   vertical-align: top;
   margin-right: 3%;
-  vertical-align: top;
   margin-top: 10px;
-  font-family: 'HelveticaNeue-Light';
+  font-family: "HelveticaNeue-Light";
 }
 .two-col.last {
     margin-right: 0;
@@ -317,8 +205,11 @@ p {
 
 .page-style-2 .two-col {
     vertical-align: middle;
-     width: 48%;
+     width: 52%;
      margin: 0;
+}
+.page-style-2 .two-col.last {
+    width: 44%;
 }
 .page-style-2 .two-col p {
   font-size: 11px;
@@ -330,21 +221,21 @@ p {
     color: #006e8a;
 }
 .two-col h4 , .text-col h4 {
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     font-size: 17px;
 }
 .page-style-3 .text-col {
     margin-top: 10px;
 }
 .two-col h3, .page-style-3 h3, .text-col h3, h3.blue {
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     font-size: 23px;
     line-height: 24px;
     text-transform: uppercase;
 }
 .date {
     color: #006e8a;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     font-size: 11px;
     display: block;
     margin-bottom: 4px;
@@ -372,7 +263,7 @@ p {
 .page-no {
     display: inline-block;
     padding: 5px;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     font-size: 16px;
 }
 .page-label {
@@ -382,7 +273,7 @@ p {
     padding: 13px 10px 0;
     font-size: 9px;
     color: #000;
-    font-family: 'MalayalamMN-Bold';
+    font-family: "MalayalamMN-Bold";
 }
 .page-label span {
     font-style: italic;
@@ -415,8 +306,8 @@ p {
     color: inherit;
 }
 .contact-detail {
-    font-family: 'MalayalamMN';
-    font-size: 7px;
+    font-family: "MalayalamMN";
+    font-size: 9px;
 }
 .contact-detail h5 {
     font-size: 9px;
@@ -425,26 +316,27 @@ p {
 }
 .circle-black {
     background: #000;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
     right: -10px;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     text-align: center;
     position: relative;
     display: block;
 }
 .small-text-bold {
-  font-family: ' MalayalamMN-Bold';
-  font-size: 7px;
+  font-family: "MalayalamMN-Bold";
+  font-size: 9px;
   display: block;
   line-height: 11px;
   display: block;
   font-style: italic;
+  margin-top: 3px;
 }
 .inside-circle-text {
     width: 70%;
@@ -459,7 +351,7 @@ p {
     transform-style: preserve-3d;
     font-size: 10.6px;
     line-height: 14px;
-    /* border: 1px solid green; */
+    font-style: normal;
 }
 .page-style-4 .two-col h4 {
     font-size: 11px;
@@ -503,21 +395,21 @@ img {
 }
 .pg-no-bottom-left {
     position: absolute;
-    font-size: 8px;
+    font-size: 10px;
     color: #797979;
-    font-family: 'Gramand';
+    font-family: "Gramand";
     font-weight: bold;
-    left: 40px;
+    left: 20px;
     bottom: 0;
     padding: 10px;
 }
 .pg-no-bottom-right {
     position: absolute;
-    font-size: 8px;
+    font-size: 10px;
     color: #797979;
-    font-family: 'Gramand';
+    font-family: "Gramand";
     font-weight: bold;
-    right: 40px;
+    right: 20px;
     bottom: 10px;
 }
 .page-style-5 h3 {
@@ -528,19 +420,19 @@ img {
 }
 p.orange {
     font-size: 11px;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     line-height: initial;
     margin: 0;
     color: #e57356;
 }
 p.blue {
     margin: 0;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     font-size: 11px;
 }
 .two-col ol, .two-col ul, .text-col ul {
     font-size: 10px;
-    font-family: 'HelveticaNeue-Light';
+    font-family: "HelveticaNeue-Light";
     color: #000;
     margin: 0;
     padding: 0 0 0 12px;
@@ -552,9 +444,9 @@ p.blue {
 }
 .fig-label {
     color: #006e8a;
-    font-size: 7.5px;
+    font-size: 9.5px;
     width: 77%;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
 }
 
 .image-left {    
@@ -565,13 +457,13 @@ p.blue {
     float: right;
     width: 40%;
     font-size: 10px;
-    font-family: 'HelveticaNeue-Light';
+    font-family: "HelveticaNeue-Light";
     line-height: 15px;
     color: #000;
 }
 .half-text {
     font-size: 10px;
-    font-family: 'HelveticaNeue-Light';
+    font-family: "HelveticaNeue-Light";
     line-height: 15px;
     position: relative;
     float: right;
@@ -583,25 +475,13 @@ p.blue {
 .page-style-6 .text {
     margin-top: 15px;
 }
-/*.page-style-8 .two-col {
-    width: 43%;
-    padding-top: 40px;
-}
-.page-style-8 .two-col.last {
-    width: 53%;
-}*/
+
 .page-style-8  .text-col-top img {
     padding-top: 20px;
     margin-left: -30px;
     width: 100%;
 }
-/*.page-style-8 .two-col.last img {
-    width: 100%;
-}*/
-.page-style-9 .fig-label, .page-style-9 .fig-label {
-    color: #7fadbb;
-    font-size: 6px;
-}
+
 .page-style-9 .page-label-no, .page-style-11 .page-label-no, .page-style-15 .page-label-no {
     float: none;
     padding-left: 60px; 
@@ -609,16 +489,20 @@ p.blue {
 .page-style-11 .two-col {
     vertical-align: bottom;
 }
+.page-style-11 ul.blue a {
+    font-size: 10px;
+    font-family: "HelveticaNeue-Light";
+}
 .events-text-1 {
     padding-top: 45px;
     padding-bottom: 40px;
 }
-.two-col .jcarousel {
+/*.two-col .jcarousel {
     margin: 0 auto;
     width: 83%;
     height: 35px;
-}
-.two-col .jcarousel ul {
+}*/
+/*.two-col .jcarousel ul {
     padding: 0;
 }
 .two-col .jcarousel li {
@@ -626,10 +510,19 @@ p.blue {
     margin-bottom: 0;
     margin: 2px;
     width: 43px;
-}
+}*/
 
 .page-style-12 p.blue{
     margin: 7px 0;
+}
+/*.page-style-12 .two-col.last {
+    margin-top: 0;
+}*/
+.page-style-8 .text-col {
+    margin-top: 10px;
+}
+.page-style-10 .text-col .orange {
+    margin-top: 10px;
 }
 .events-text-2 {
     padding: 20px 40px;
@@ -637,28 +530,29 @@ p.blue {
 .events-text-3 {
     padding-top: 40px;
 }
-
-.page-style-13 .jcarousel li,
-.page-style-14 .jcarousel li {
+.page-style-14 .text-col {
+    margin-top: 10px;
+}
+.jcarousel {
+    height: 260px;
+}
+.jcarousel li {
     position: relative;
     border: 0;
 /*    margin:0 1px;*/
 }
-.page-style-13 .jcarousel li .caption,
-.page-style-14 .jcarousel li .caption {
+.jcarousel li .caption {
     position: absolute;
     background: rgba(255,255,255,.7);
     bottom: 0;
     color: #000;
     width: 100%;
     padding: 5px 2%;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     font-size: 10px;
 }
-.page-style-13 .jcarousel-control-prev,
-.page-style-13 .jcarousel-control-next,
-.page-style-14 .jcarousel-control-prev,
-.page-style-14 .jcarousel-control-next {
+ .jcarousel-control-prev,
+ .jcarousel-control-next {
     color: white;
     font-size: 50px;
 }
@@ -666,7 +560,7 @@ p.blue {
 .jcarousel-control-next:focus {
     outline: none;
 }
-.page-style-13 .jcarousel li img, .page-style-14 li img {
+.jcarousel li img {
     height: auto; 
     min-width: 480px; 
     max-height: 260px;
@@ -682,7 +576,7 @@ p.blue {
     position: absolute;
     top: 0;
     padding: 12px;
-    font-family: 'MalayalamMN';
+    font-family: "MalayalamMN";
     text-transform: uppercase;
     color: #FFF;
 }
@@ -703,4 +597,7 @@ p.blue {
 }
 .effect-moveleft.animate .outer-nav a {
     font-size: 16px;
+}
+.clear {
+    clear: both;
 }

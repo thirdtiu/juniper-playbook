@@ -78,7 +78,7 @@
 
 	Book.prototype._layout = function() {
 		if( Modernizr.csstransforms3d ) {
-			this.book.innerHTML = '<div class="cover"><a href="###"><img src="img/necessity/page-corner.png" id="page-corner" /></a><div class="front"><div class="front-text"><h4>Connect everything. Empower everyone.</h4><img src="./img/juniper-pages/front-bar.png" class="front-bar"/><h1>Juniper</h1><h5>Quarterly E-Newsletter</h5><div class="issue-text"><span class="front-issue">issue 01  |  April 2016</span><div class="issue-description">Bringing you<br> the Biggest news<br> about IT digital<br> advancement.<img src="./img/juniper-pages/front-bar2.png" class="front-bar"/><span class="keeping">Keeping you connected<br> with the Latest happenings<br>in the industry.</span><img src="./img/juniper-pages/front-bar2.png" class="front-bar"/> The importance of<br>a right data center<br>network is to support<br> your business-critical<br> applications.<img src="./img/juniper-pages/front-bar2.png" class="front-bar"/>The next-generation<br>firewall for your<br> virtualized IT Data<br> Centres – For Enterprises<br> and Service Providers<img src="./img/juniper-pages/front-bar2.png" class="front-bar"> </div></div><div class="circle-black"><div class="inside-circle-text">The<br> Digital<br> Evolution<br>is here. </div></div></div> </div><div class="inner inner-left"></div></div><div class="inner inner-right"></div>';
+			this.book.innerHTML = '<div class="cover"><a href="###"><img src="img/necessity/page-corner.png" id="page-corner" /></a><div class="front"><div class="front-text"><h4>Connect everything. Empower everyone.</h4><img src="./img/juniper-pages/front-bar.png" class="front-bar"/><h1>Juniper</h1><h5>Quarterly E-Newsletter</h5><div style="position:relative;"><div class="issue-text"><span class="front-issue">issue 01  |  April 2016</span><div class="issue-description">Bringing you<br> the Biggest news<br> about IT digital<br> advancement.<span class="keeping">Keeping you connected<br> with the Latest happenings<br>in the industry.</span><img src="./img/juniper-pages/front-bar2.png" class="front-bar"/> The importance of<br>a right data center<br>network is to support<br> your business-critical<br> applications.<img src="./img/juniper-pages/front-bar2.png" class="front-bar"/>The next-generation<br>firewall for your<br> virtualized IT Data<br> Centres – For Enterprises<br> and Service Providers<img src="./img/juniper-pages/front-bar2.png" class="front-bar"> </div></div><div class="circle-black"><div class="inside-circle-text">The<br> Digital<br> Evolution<br>is here. </div></div></div></div> </div><div class="inner inner-left"></div></div><div class="inner inner-right"></div>';
 		}
 	}
 		
@@ -649,6 +649,7 @@
 		if ($(this).scrollTop()>40 && ! $('#top-perspective').hasClass('animate'))
 		 {
 			$('#phone-menu').fadeIn(500);
+			
 		 }
 		else
 		 {
@@ -658,8 +659,5 @@
 	$(".colorbox-11").colorbox({rel:'colorbox-11', arrowKey: false});
 	$(".colorbox-12").colorbox({rel:'colorbox-12', arrowKey: false});
 	$(".colorbox-13").colorbox({rel:'colorbox-13', arrowKey: false});
-	$("#click").click(function(){ 
-		$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-		return false;
-	});
+
 })(jQuery);
