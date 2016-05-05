@@ -655,5 +655,11 @@
 		 	$('#phone-menu').fadeOut(500);
 		 }
 	 });	
-	
+	$(".colorbox-11").colorbox({rel:'colorbox-11', arrowKey: false});
+	$(".colorbox-12").colorbox({rel:'colorbox-12', arrowKey: false});
+	$(".colorbox-13").colorbox({rel:'colorbox-13', arrowKey: false});
+	$("#click").click(function(){ 
+		$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+		return false;
+	});
 })(jQuery);

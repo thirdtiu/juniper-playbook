@@ -12,16 +12,18 @@
             .jcarousel({
                 wrap: 'circular'
             });
-        $('.page-style-13 .jcarousel, .page-style-14 .jcarousel')
-            .on('jcarousel:reload jcarousel:create', function () {
-                var carousel = $(this),
-                    width = 100;
+        // $('.page-style-13 .jcarousel, .page-style-14 .jcarousel')
+        //     .on('jcarousel:reload jcarousel:create', function () {
+        //         var carousel = $(this),
+        //             // width = carousel.innerWidth()*5;
+        //             width = 480;
               
-                carousel.jcarousel('items').css('width', Math.ceil(width) + '%');
-            })
-            .jcarousel({
-                wrap: 'circular'
-            });
+        //         carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+        //     })
+        //     .jcarousel({
+        //         wrap: 'circular'
+        //     });
+        $('.page-style-13 .jcarousel, .page-style-14 .jcarousel').jcarousel();
         $('.jcarousel-control-prev')
             .jcarouselControl({
                 target: '-=1'

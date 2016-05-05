@@ -11,7 +11,7 @@
 }
 
 .jcarousel ul {
-    width: 504px;
+    width: 2000em;
     position: relative;
     list-style: none;
     margin: 0;
@@ -19,7 +19,7 @@
 }
 
 .jcarousel li {
-    width: 42px;
+    width: 480px;
     float: left;
     border: 1px solid #fff;
     -moz-box-sizing: border-box;
