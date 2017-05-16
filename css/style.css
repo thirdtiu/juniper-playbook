@@ -16,14 +16,43 @@ html{
 }
 
 body {
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	color: #888;
 	background: #DDD;
 	background:url(../img/background/dark_wood_x.jpg);
 }
 
-
-
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.pager{
+	border-bottom: 1px solid #fff;
+	font-size: 11px;
+	color: #fff;
+	padding-bottom: 10px;
+}
+.pager.dark{
+	color: #030303;
+	border-color: #030303;
+}
+.pager .text{
+	text-transform: uppercase;
+	float: left;
+}
+.pager .page-number{
+	float:right;
+}
 
 .book{
 	z-index:3;
@@ -38,6 +67,7 @@ body {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
+	z-index: 601;
 }
 
 #page-corner{
@@ -154,6 +184,7 @@ body {
 /* Page 1 */
 .container{
 	padding:40px;
+	height: 100%;
 }
 .content-title{
 	display:block;
@@ -790,6 +821,51 @@ ul.social li i.fa-instagram:hover { color:#3f729b; }
 .fullpage-img{
 	height: 100%;
 	width: 100%;	
+}
+.fullpage-img.back{
+	background: #4effd7;
+}
+.fullpage-img.back .content{
+	padding: 45px;
+	line-height: 1.3;
+	margin-bottom: 200px;
+}
+.fullpage-img.back .content p{
+	font-size: 10px;
+	line-height: 1.3;
+}
+.fullpage-img.back .content h1{
+	font-size: 25px;
+	font-weight: bold;
+	color: #010101;
+	line-height: 1.3;
+}
+.fullpage-img.back .content h6{
+	font-size: 11px;
+	font-weight: normal;
+	color: #000;
+}
+
+@media (min-width: 768px){
+	.fullpage-img.back .content{
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		margin-bottom: 0;
+	}
+}
+hr.small{
+	border-top: 5px solid #000;
+	border-bottom: none;
+	width: 37px;
+	margin-left: 0;
+	margin-bottom: 15px;
+}
+hr.small.white{
+	border-color: #fff;
+}
+.fullpage-img.back .content small{
+	font-size: 8px;
 }
 .fullpage-img img{
 	max-width:100%;

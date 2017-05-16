@@ -78,7 +78,24 @@
 
 	Book.prototype._layout = function() {
 		if( Modernizr.csstransforms3d ) {
-			this.book.innerHTML = '<div class="cover"><a href="###"><img src="img/necessity/page-corner.png" id="page-corner" /></a><div class="front"><div class="front-text"><h4>Connect everything. Empower everyone.</h4><img src="./img/juniper-pages/front-bar.png" class="front-bar"/><h1>Juniper</h1><h5>Quarterly E-Newsletter</h5><div style="position:relative;"><div class="issue-text"><span class="front-issue">issue 01  |  April 2016</span><div class="issue-description">Bringing you<br> the Biggest news<br> about IT digital<br> advancement.<span class="keeping">Keeping you connected<br> with the Latest happenings<br>in the industry.</span><img src="./img/juniper-pages/front-bar2.png" class="front-bar"/> The importance of<br>a right data center<br>network is to support<br> your business-critical<br> applications.<img src="./img/juniper-pages/front-bar2.png" class="front-bar"/>The next-generation<br>firewall for your<br> virtualized IT Data<br> Centres – For Enterprises<br> and Service Providers<img src="./img/juniper-pages/front-bar2.png" class="front-bar"> </div></div><div class="circle-black"><div class="inside-circle-text">The<br> Digital<br> Evolution<br>is here. </div></div></div></div> </div><div class="inner inner-left"></div></div><div class="inner inner-right"></div>';
+			this.book.innerHTML = `
+			<div class="cover">
+			    <a href="###"><img src="img/necessity/page-corner.png" id="page-corner" /></a>
+			    <div class="front">
+			      <div class="large-img">
+			          <img src="img/v3/pb-1.png" alt="The Rocket Fuel Network Experience">
+			      </div>
+			      <div class="content">
+			          <h1>The Rocket Fuel Network Experience</h1>
+			          <p>A Cisco Upgrade Program Playbook</p>
+			          <h5>Simply Switch To a Better Switch</h5>
+			          <div class="logo">
+			              <img src="img/v3/pb-logo1.png" alt="Juniper">
+			          </div>
+			      </div>
+			    </div>
+			</div>
+			`;
 		}
 	}
 		
@@ -100,8 +117,7 @@
 									$( '.outer-nav > a' ).removeClass('bb-current');
 									$( '.outer-nav > a' ).eq(current_page).addClass('bb-current');
 									resetMenu(page);
-									// init Map
-									initMap(page);
+
 									
 									//initBxslider(page);
 									//if($('.bb-item:has').eq(page).hasClass('unslider'))
@@ -116,27 +132,6 @@
 							}
 		} );
 
-		$('#portfolio-container').one("cust2",function(){
-			$(this).isotope({
-			  // options
-			  itemSelector : '.portfolio-item',
-			  layoutMode : 'fitRows'
-			});	
-		});
-
-		// filter items when filter link is clicked
-		$('.portfolio-filters li').click(function(){
-			var selector = $(this).attr('data-filter');
-			$('#portfolio-container').isotope({ filter: selector });
-			//reset fancyBox
-			$('.isotope-item').find('.fancybox').removeAttr('rel')
-			$('.isotope-item').not('.isotope-hidden').find('.fancybox').attr('rel', 'xxx');
-			//reset current filter item
-			$(".portfolio-filters>li.active").removeClass('active');
-			$(this).addClass('active');
-			return false;
-		});
-
 		$('.unslider').one("cust1",function(){
 						$(this).bjqs({
 							width       : 1300,
@@ -148,37 +143,7 @@
 						  });			
 		});			
 		
-		function initMap(nextPage){
-			
-			var win_w=$(window).width();
-			var theMap = $('.bb-item').eq(nextPage).find('#map-wrapper');
-			if(win_w<769){
-			  	theMap.parent().css({'height':'360px','width':'100%'});
-			}else{
-			  	theMap.parent().css({'height':'100%','width':'100%'});
-			}
-			var _address=theMap.attr('address-data');
-			var _marker=theMap.attr('marker-url');
-			$(".content-wrapper").perfectScrollbar('update');
-			theMap.gmap3({
-			 map: {
-				options: {
-				  maxZoom: 14 
-				}  
-			 },
-			 marker:{
-				address: _address,
-				options: {
-				 icon: new google.maps.MarkerImage(
-				   _marker,
-				   new google.maps.Size(32, 37, "px", "px")
-				 )
-				}
-			 }
-			},
-			"autofit" );
-			theMap.css({'visibility':'visible','opacity':'1'});			
-		}
+		
 
 		function resetMenu(nextPage){
 			var $menuItem=$( ' #nav-scroll > a' );
@@ -582,17 +547,6 @@
 		$('input, textarea').placeholder();
 		$("form").validate();
 		
-		//init fancybox
-		$('.fancybox').fancybox();
-		//init fancybox Media helper
-		$('.fancybox-media').fancybox({
-			openEffect  : 'none',
-			closeEffect : 'none',
-			helpers : {
-				media : {}
-			}
-		});	
-		
 		//init the portfolio filter
 		$('li.portfolio-item').addClass('active');		
 	
@@ -643,21 +597,68 @@
 				
 			
 	});		
-
-	//the Phone Menu Function
-	$(window).scroll(function() {		
-		if ($(this).scrollTop()>40 && ! $('#top-perspective').hasClass('animate'))
-		 {
-			$('#phone-menu').fadeIn(500);
-			
-		 }
-		else
-		 {
-		 	$('#phone-menu').fadeOut(500);
-		 }
-	 });	
-	$(".colorbox-11").colorbox({rel:'colorbox-11', arrowKey: false});
-	$(".colorbox-12").colorbox({rel:'colorbox-12', arrowKey: false});
-	$(".colorbox-13").colorbox({rel:'colorbox-13', arrowKey: false});
-
+	
+		$(".cb-6").colorbox({
+			inline: true,
+			href: '#colorbox-6-content',
+			className: 'colorbox-6',
+			width: '70%',
+			closeButton: false,
+		});
+		$(".cb-8").colorbox({
+			inline: true,
+			href: '#colorbox-8-content',
+			className: 'colorbox-8',
+			width: '70%',
+			closeButton: false,
+		})
+    $(".cb-5").colorbox({
+    	inline: true,
+    	href: '#colorbox-5-content',
+    	className: 'colorbox-5',
+    	width: '70%',
+    	closeButton: false,
+    });
+    $(".cb-9").colorbox({
+    	inline: true,
+    	href: '#colorbox-9-content',
+    	className: 'colorbox-9',
+    	width: '90%',
+    	closeButton: false,
+    });
+    $(".cb-10").colorbox({
+    	inline: true,
+    	href: '#colorbox-10-content',
+    	className: 'colorbox-10',
+    	width: '70%',
+    	closeButton: false,
+    });
+    $(".cb-11").colorbox({
+    	inline: true,
+    	href: '#colorbox-11-content',
+    	className: 'colorbox-11',
+    	width: '70%',
+    	closeButton: false,
+    });
+    $(".cb-12").colorbox({
+    	inline: true,
+    	href: '#colorbox-12-content',
+    	className: 'colorbox-12',
+    	closeButton: false,
+    });
+    $( 'body' ).on( "click", ".close", function() {
+      $.colorbox.close();
+      return false;
+    });
+    
+	var  width = $( window ).width();
+	
+	if (width < 768) {
+		$(".cb-11").colorbox({width:"100%"});
+		$(".cb-10").colorbox({width:"100%"});
+		$(".cb-9").colorbox({width:"100%"});
+		$(".cb-5").colorbox({width:"100%"});
+		$(".cb-8").colorbox({width:"100%"});
+		$(".cb-6").colorbox({width:"100%"});
+	}
 })(jQuery);

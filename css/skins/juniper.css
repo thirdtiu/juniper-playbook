@@ -12,16 +12,52 @@ body{
 }
 
 .no-csstransforms3d .book,
-
 .no-js .book,
-
 .front {
-    background: url(../../img/juniper-pages/cover.png) #18728d;
-    /*background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.16) 15%, rgba(255, 255, 255, 0.05) 100%), url(../../img/juniper-pages/cover.png), #333;
-    background: linear-gradient(to ri*/ght, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.16) 15%, rgba(255, 255, 255, 0.1) 100%), url(../../img/juniper-pages/cover.png), #333;
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:bottom;	
+  background: #fff;
+}
+.book.cover-book{
+	height: auto;
+}
+.front .large-img{
+	height: 70%;
+	background: #4effd7;
+	text-align: center;
+}
+.front .large-img img{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    display: block;
+    object-fit: cover;
+    position: relative;
+}
+.front .content{
+    padding: 10px 20px;
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.front h1{
+    text-transform: uppercase;
+    color: #ff397a;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: bold;
+}
+.front h5{
+    color: #ff397a;
+}
+@media (min-width: 1089px){
+	.front .content .logo{
+	    position: absolute;
+	    bottom: 10px;
+	    right: 20px;
+	}
+}
+.front .content .logo img{
+	width: 70px;
 }
 
 h1.huge-title{
@@ -60,7 +96,6 @@ p.half-width{
 .intro-content h1{
 	font-family:'Tulpen One', Arial, Helvetica, sans-serif;
 	font-style:normal;
-	text-transform:uppercase;
 	font-weight:bold;
 	font-size:2.6em;
 }
@@ -80,6 +115,6 @@ p.half-width{
 
 .effect-moveleft.animate .outer-nav a{
 	font-family:'Marvel', Arial, Helvetica, sans-serif;
-	font-size:1.5em;
-	font-weight:600;
+	font-size:1em;
+	font-weight:normal;
 }
